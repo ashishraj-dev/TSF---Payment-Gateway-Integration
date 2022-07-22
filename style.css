@@ -20,6 +20,8 @@ h1 {
   position: absolute;
   left: 10px;
   top: -45px;
+  margin-top: 30px;
+  transition: 0.3s;
 }
 
 nav {
@@ -29,6 +31,7 @@ nav {
 ul {
   margin: 40px;
   list-style: none;
+  transition: 0.3s
 }
 
 li {
@@ -36,6 +39,7 @@ li {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   display: inline-block;
+  transition: 0.3s;
 }
 
 a {
@@ -70,8 +74,6 @@ button {
   background-color: rgb(0, 0, 0);
   font-size: medium;
   font-weight: bold;
-  position: absolute;
-  left: 250px;
 }
 
 .kids-bg {
@@ -86,19 +88,39 @@ button {
 }
 
 .kids-content {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   width: 600px;
   margin-left: 10px;
   margin-right: 10px;
-  padding-top: 150px;
+  padding-top: 10px;
+  max-height: 700px;
 }
 
-.kids-content p {
+.kids-content-p {
   font-weight: bolder;
   padding: 20px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+}
+
+.p1 {
+  margin-bottom: 40px;
+}
+
+.donate-btn {
+  align-self: center;
+  color: #fff;
+}
+
+.donate-link:hover {
+  color: rgb(255, 242, 0);
+}
+
+.donate-link {
+  color: #fff;
 }
 
 .header-nav {
@@ -106,6 +128,7 @@ button {
   height: 109px;
   position: relative;
   border-bottom: 2px solid rgb(0, 0, 0);
+  transition: 0.3s;
 }
 
 .nav-link:hover {
@@ -115,6 +138,7 @@ button {
 
 .logo-img {
   margin: 5px 10px 0px;
+  transition: 0.3s
 }
 
 .header-link {
@@ -127,27 +151,15 @@ button {
   display: inline-block;
 }
 
-.donate-btn {
-  color: #fff;
-  position: relative;
-}
-
-.donate-link:hover {
-  color: rgb(255, 242, 0);
-}
-
-.donate-link {
-  color: #fff;
-}
-
 .about-us {
   padding: 10px;
   box-shadow: rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   text-align: center;
   margin: auto;
-  width: 800px;
-  height: 480px;
-  font-weight: 500;
+  width: 60vw;
+  height: 60vh;
+  font-size: 1.2vw;
+  transition: 0.3s;
 }
 
 .donate-now {
@@ -155,28 +167,127 @@ button {
   box-shadow: rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   text-align: center;
   margin: auto;
-  width: 800px;
+  width: 49.2vw;
   height: 250px;
   font-weight: 500;
+  transition: 0.3s;
 }
 
-.nav-header {
+.about-header {
   text-align: center;
   font-weight: bold;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   padding-top: 15px;
   background-color: #D9EDE8;
   margin: auto;
-  width: 800px;
+  width: 60vw;
   height: 50px;
+  transition: 0.3s;
+}
+
+.donate-header {
+  text-align: center;
+  font-weight: bold;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  padding-top: 15px;
+  background-color: #D9EDE8;
+  margin: auto;
+  width: 49.2vw;
+  height: 50px;
+  transition: 0.3s;
 }
 
 
-.about-us, .nav-header, .donate-now {
+.about-us, .about-header, .donate-now, .donate-header {
   font-family: 'Montserrat', sans-serif;
 }
 
 .about-us p span {
   text-transform: uppercase;
   font-weight: bolder;
+}
+
+@media (max-width: 1172px) {
+  .about-us {
+    height: 50vh;
+    transition: 0.3s;
+  }
+}
+
+@media (max-width: 872px) {
+  h1 {
+    font-size: 1.7rem;
+    margin-top: 45px;
+    transition: 0.3s;
+    left: -10px;
+  }
+
+  li {
+    font-size: 0.8rem;
+    transition: 0.3s;
+  }
+
+  article {
+    margin-top: 10px;
+  }
+
+  footer {
+    font-size: small;
+  }
+
+  .logo-img {
+    height: 80px;
+    width: 100px;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+
+  .header-nav {
+    height: 95px;
+    position: relative;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transition: 0.3s;
+  }
+
+  .kids-content-p {
+    font-weight: 550;
+  }
+}
+
+@media (max-width: 650px) {
+  li {
+    display: block;
+    padding: 5px;
+  }
+
+  ul {
+    margin: 9px;
+    transition: 0.3s
+  }
+  
+}
+
+@media (max-width: 424px) {
+  button {
+    width: 90px;
+    height: 40px;
+    font-size: small;
+    font-weight: bold;
+  }
+
+  .kids-content {
+    overflow: auto;
+  }
+
+  .kids-bg {
+    width: 770px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .PaymentButton--rzpTheme.svelte-ekc7fv .PaymentButton-contents.svelte-ekc7fv {
+    padding-left: 44px;
+    transition: 0.3s;
+}
 }
